@@ -29,19 +29,19 @@ export default function Buy(){
                 </div>
                 <div className="main-buy">
                     <form className="row needs-validation" noValidate>
-                        <div className="col-md-4">
+                        <div className="col-md-3">
                             <label htmlFor="validationCustom01" className="form-label" style={{color: "red", fontWeight: "bold"}}>Nome</label>
                             <input type="text" className="form-control" id="validationCustom01" placeholder="Mario" required />
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-3">
                             <label htmlFor="validationCustom02" className="form-label" style={{color: "red", fontWeight: "bold"}}>Cognome</label>
                             <input type="text" className="form-control" id="validationCustom02" placeholder="Rossi" required />
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-6">
                            <label for="exampleFormControlInput1" class="form-label" style={{color: "red", fontWeight: "bold"}}>Email</label>
                             <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-5">
                             <label htmlFor="validationCustom03" className="form-label" style={{color: "red", fontWeight: "bold"}}>Città</label>
                             <input type="text" className="form-control" id="validationCustom03" required placeholder="Roma" />
                         </div>
@@ -49,11 +49,23 @@ export default function Buy(){
                             <label htmlFor="validationCustom05" className="form-label" style={{color: "red", fontWeight: "bold"}}>Numero</label>
                             <input type="text" className="form-control" id="validationCustom05" required  placeholder="332 66 48 123"/>
                         </div> 
-                        <div className="col-md-3">
+                        <div className="col-md-4">
                             <label htmlFor="validationCustom05" className="form-label" style={{color: "red", fontWeight: "bold"}}>Data di nascita</label>
                             <input type="date" className="form-control" id="validationCustom05" required  placeholder="dd/mm/yyyy"/> 
                         </div>
-                        <div className="col-12">
+                        <div className="col-md-4">
+                            <label htmlFor="validationCustom05" className="form-label" style={{color: "red", fontWeight: "bold"}}>Prezzo </label>
+                            <input type="text" className="form-control" id="validationCustom05" required  placeholder="€"/>
+                        </div>
+                        <div className="col-md-4">
+                            <label htmlFor="validationCustom05" className="form-label" style={{color: "red", fontWeight: "bold"}}>Data del viaggio</label>
+                            <input type="date" className="form-control" id="validationCustom05" required  placeholder="dd/mm/yyyy"/> 
+                        </div>
+                        <div className="col-md-4">
+                            <label htmlFor="validationCustom05" className="form-label" style={{color: "red", fontWeight: "bold"}}>Metodo di pagamento</label>
+                            <input type="text" className="form-control" id="validationCustom05" required  placeholder="Carta di credito"/>
+                        </div>
+                        <div className="col-12" style={{margin: "10px 0"}}>
                             <div className="form-check form-switch">
                                 <input type="checkbox" className="form-check-input" id="exampleCheck1" />
                                 <label className="form-check-label" htmlFor="exampleCheck1" style={{color: "red", fontWeight: "bold"}}>Privacy</label>
