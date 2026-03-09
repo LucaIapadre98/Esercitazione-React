@@ -1,0 +1,66 @@
+body{
+    background-image: url("/capitali-mondo.webp");
+    background-size: cover;
+    opacity: 0.90;
+    position: relative;
+}
+
+.container-main{
+    margin: 30px;
+}
+
+.container-main .collapse img{
+    width: 20%;
+    height: 20%;
+}
+
+.container-main .collapse {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: stretch;
+}
+
+.dettaglio{
+    text-decoration: none;
+    color: white;
+}
+.card figcaption{
+    padding: 10px 0 0 0;
+}
+ .row h6{
+    color: rgb(239, 47, 47);
+}
+
+.container-main .card {
+    display: flex;
+    flex-direction: column;
+    width: 410px;
+    height: 290px;
+    padding: 10px;
+}
+
+.container-main .card .row {
+    margin-top: 25px;
+}
+
+.main .title{
+    text-align: center;
+    margin-top: 20px;
+}
+.main .title h2{
+    font-size: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(252, 32, 32);
+}
+.main-buy{
+    margin-left: 400px;
+    margin-top: 130px;
+}
+form{
+    border: 1px solid black;
+    width: 900px;
+    background-color:rgb(255, 255, 255);
+    padding: 35px;
+    border-radius: 5px;
+}
