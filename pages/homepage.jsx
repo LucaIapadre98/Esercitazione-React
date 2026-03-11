@@ -36,9 +36,9 @@ export default function Homepage(){
                     <div className="col-md-3 mb-md-0 p-md-4">
                         <img src="./aereo.jpg"  alt="foto aereo" />
                     </div>
-                    <div className="col-md-9 p-4 ps-md-0">
-                        <h2 className="mt-0">WebApp Viaggio</h2>
-                        <p>In questo sito puoi esplorare diverse destinazioni di viaggio e ottenere informazioni dettagliate su ciascuna di esse. Scoprire nuove culture, pianificare itinerari e vivere esperienze uniche non è mai stato così semplice. Ogni viaggio inizia con una semplice esplorazione.</p>
+                    <div className="col-md-9 p-3 ps-md-0">
+                        <h1 className="mt-0">WebApp Viaggio</h1>
+                        <p>Pianifica il tuo prossimo viaggio in modo semplice, veloce e intelligente. La nostra webapp ti permette di scoprire nuove destinazioni, creare itinerari personalizzati e organizzare ogni dettaglio del tuo viaggio in un’unica piattaforma. Dalla scelta della meta alle attività da fare, tutto è progettato per aiutarti a vivere esperienze autentiche senza stress. Esplora il mondo, trova ispirazione e trasforma ogni viaggio in un’avventura indimenticabile. 🌍✈️</p>
                         <div className="group-btn">
                             <button className="text-bg-primary focus-ring">Europa</button>
                             <button className="text-bg-secondary focus-ring">Asia</button>
@@ -52,26 +52,26 @@ export default function Homepage(){
             <div className="container-main">
                 <p className="d-inline-flex">
                     <button className="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        Clicca qui
+                        &#8594; Clicca qui &#8592;
                     </button>
                 </p>
                 <div className="collapse" id="collapseExample">
                     {data.map((data) => (
                         <div className="card card-body" key={data.id}>
-                        <h1>{data.name}</h1>
-                        <figcaption className="blockquote-footer">
-                            {data.country}, {data.continent}
-                        </figcaption>
-                        <dl className="row">
-                            <dt className="col-sm-3"><h6>Descrizione:</h6></dt>
-                            <dd className="col-sm-9"><p>{data.description}</p></dd>
-                            <dd className="col-sm-9">
-                                <button className="btn btn-warning" type="button">
-                                    <NavLink to={`/details/${data.id}`} className="dettaglio" style={{padding: "8px 15px"}}>Dettaglio</NavLink>
-                                </button>
-                            </dd>
-                        </dl>
-                    </div>
+                            <h1>{data.name}</h1>
+                            <figcaption className="blockquote-footer">
+                                {data.country}, {data.continent}
+                            </figcaption>
+                            <dl className="row">
+                                <dt className="col-sm-3"><h6>Descrizione:</h6></dt>
+                                <dd className="col-sm-9"><p>{data.description}</p></dd>
+                                <dd className="col-sm-9">
+                                    <button className="btn btn-warning" type="button">
+                                        <NavLink to={`/details/${data.id}`} className="dettaglio" style={{padding: "8px 15px"}}>Dettaglio</NavLink>
+                                    </button>
+                                </dd>
+                            </dl>
+                        </div>
                     ))}
                 </div> 
             </div>
