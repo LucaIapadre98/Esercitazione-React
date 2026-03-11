@@ -1,23 +1,30 @@
 import { NavLink, useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
+import axios from "axios";
 
 export default  function Details(){
     const { id } = useParams()
     const [data, setData] = useState([]);
 
-    async function ApiId(id) {
-        try{
-            const responseId = await fetch (`http://localhost:3333/destinations/${id}`)
-            const data = await responseId.json()
-            setData([data]);
-            console.log("Parametro singolo:", data);     
-        } catch (error){
-            console.error("Messaggio di errore:", error);
-        }
-    };
-    useEffect(() => {
-        ApiId(id)
-    }, [id])
+    // async function ApiId(id) {
+    //     try{
+    //         const responseId = await fetch (`http://localhost:3333/destinations/${id}`)
+    //         const data = await responseId.json()
+    //         setData([data]);
+    //         console.log("Parametro singolo:", data);     
+    //     } catch (error){
+    //         console.error("Messaggio di errore:", error);
+    //     }
+    // };
+
+    // useEffect(() => {
+    //     ApiId(id)
+    // }, [id])
+
+    axios.get((`http://localhost:3333/destinations/${id}`))
+    .then((response) => {setData([response.data])})
+    .catch((error) => {console.error("Messaggio di errore:", error)})
+
 
     return (
         <>

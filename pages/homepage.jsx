@@ -31,6 +31,24 @@ export default function Homepage(){
                     </div> 
                 </nav>
             </div>
+            <div className="container-title">
+                <div className="row g-2 bg-body-secondary position-relative mb-3">
+                    <div className="col-md-3 mb-md-0 p-md-4">
+                        <img src="./aereo.jpg"  alt="foto aereo" />
+                    </div>
+                    <div className="col-md-9 p-4 ps-md-0">
+                        <h2 className="mt-0">WebApp Viaggio</h2>
+                        <p>In questo sito puoi esplorare diverse destinazioni di viaggio e ottenere informazioni dettagliate su ciascuna di esse. Scoprire nuove culture, pianificare itinerari e vivere esperienze uniche non è mai stato così semplice. Ogni viaggio inizia con una semplice esplorazione.</p>
+                        <div className="group-btn">
+                            <button className="text-bg-primary focus-ring">Europa</button>
+                            <button className="text-bg-secondary focus-ring">Asia</button>
+                            <button className="text-bg-success focus-ring">Africa</button>
+                            <button className="text-bg-danger focus-ring">America</button>
+                            <button className="text-bg-warning focus-ring">Oceania</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className="container-main">
                 <p className="d-inline-flex">
                     <button className="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
@@ -48,7 +66,7 @@ export default function Homepage(){
                             <dt className="col-sm-3"><h6>Descrizione:</h6></dt>
                             <dd className="col-sm-9"><p>{data.description}</p></dd>
                             <dd className="col-sm-9">
-                                <button className="btn btn-info">
+                                <button className="btn btn-warning" type="button">
                                     <NavLink to={`/details/${data.id}`} className="dettaglio" style={{padding: "8px 15px"}}>Dettaglio</NavLink>
                                 </button>
                             </dd>

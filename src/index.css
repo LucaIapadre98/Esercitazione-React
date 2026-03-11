@@ -64,3 +64,24 @@ form{
     padding: 35px;
     border-radius: 5px;
 }
+.container-title{
+    width: 99.79%;
+}
+.container-title img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 1.2;
+}
+.container-title .group-btn{
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+    margin-left: 80px;
+
+}
+.container-title .group-btn button{
+    padding: 11px 30px;
+    font-size: 40px;
+}
